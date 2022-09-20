@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
 }
 header {
   font-size: 2rem;
+  background-color: #0d6a87;
 }
 
 header,
@@ -28,7 +28,7 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
+  color: #db3461;
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -41,6 +41,7 @@ form button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0d6a87;
 }
 
 .todo-list {
@@ -67,7 +68,7 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
+  background: #dd3838;
   color: white;
   border: none;
   padding: 1rem;
@@ -75,12 +76,15 @@ form button:hover {
   font-size: 1rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: rgb(175 193 188);
 }
 .todo-item {
   padding: 0rem 0.5rem;
 }
-
+.todo-input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .fa-trash,
 .fa-check {
   pointer-events: none;
@@ -115,19 +119,19 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
-  font-family: "Poppins", sans-serif;
+  color: #db3461;
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   width: 12rem;
 }
 /* Arrow */
 .select::after {
-  content: "\25BC";
+  content: '\25BC';
   position: absolute;
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #db3461;
   cursor: pointer;
   pointer-events: none;
 }
